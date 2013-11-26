@@ -38,7 +38,7 @@ class v1_holidays extends Module
 			$cache_key        = $country . '-holidays-' . $year;
 			$country_holidays = $this->cache->get($cache_key);
 
-			if ($country_holidays === false)
+			//if ($country_holidays === false)
 			{
 				$country_file = '../countries/' . $country . '.json';
 
@@ -55,6 +55,10 @@ class v1_holidays extends Module
 					if (strstr($country_holiday['rule'], '%Y'))
 					{
 						$rule = str_replace('%Y', $year, $country_holiday['rule']);
+					}
+					elseif (strstr($country_holiday['rule'], '%EASTER'))
+					{
+						$rule = str_replace('%EASTER', date('Y-m-d', strtotime($year . '-03-21 +' . easter_days($year) . ' days')), $country_holiday['rule']);
 					}
 					else
 					{
