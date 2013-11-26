@@ -12,11 +12,11 @@ class v1_holidays extends Module
 			{
 				throw new Exception('This API only supports GET requests.');
 			}
-			elseif (!isset($_GET['country']))
+			elseif (!isset($_GET['country']) || String::isEmpty($_GET['country']))
 			{
 				throw new Exception('The country parameter is required.');
 			}
-			elseif (!isset($_GET['year']))
+			elseif (!isset($_GET['year']) || String::isEmpty($_GET['year']))
 			{
 				throw new Exception('The year parameter is required.');
 			}
