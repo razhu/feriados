@@ -1,0 +1,72 @@
+{
+	'01' : {
+		'New Year’s Day'              : { 'rule' : 'January 1st'           },
+		'Last Day of Kwanzaa'         : { 'rule' : 'January 1st'           },
+		'Epiphany'                    : { 'rule' : 'January 6th'           },
+		'Orthodox Christmas'          : { 'rule' : 'January 7th'           },
+		'Martin Luther King, Jr. Day' : { 'rule' : '3rd Monday of January' },
+		//'Inauguration Day'            : { 'rule' : 'January 20th'          }
+	},
+	'02' : {
+		'Groundhog Day'         : { 'rule' : 'February 2nd'            },
+		'Valentine’s Day'       : { 'rule' : 'February 14th'           },
+		'Washington’s Birthday' : { 'rule' : '3rd Monday of Februrary' }
+	},
+	'03' : {
+		'International Women’s Day' : { 'rule' : 'March 8th'  },
+		'Saint Patrick’s Day'       : { 'rule' : 'March 17th' }
+	},
+	'04' : {
+		'April Fools’ Day' : { 'rule' : 'April 1st'            },
+		'Earth Day'        : { 'rule' : 'April 22nd'           },
+		'Arbor Day'        : { 'rule' : 'Last Friday of April' }
+	},
+	'05' : {
+		'May Day'       : { 'rule' : 'May 1st'            },
+		'Star Wars Day' : { 'rule' : 'May 4th'            },
+		'Cinco de Mayo' : { 'rule' : 'May 5th'            },
+		'Mother’s Day'  : { 'rule' : '2nd Sunday of May'  },
+		'Memorial Day'  : { 'rule' : 'Last Monday of May' }
+	),
+	'06' : {
+		'Flag Day'         : { 'rule' : 'June 14th'          },
+		'Helen Keller Day' : { 'rule' : 'June 27th'          },
+		'Father’s Day'     : { 'rule' : '3rd Sunday of June' }
+	},
+	'07' : {
+		'Independence Day' : { 'rule' : 'July 4th' }
+	),
+	'08' : {
+		'Women’s Equality Day' : { 'rule' : 'August 26th' }
+	},
+	'09' : {
+		'Labor Day'         : { 'rule' : '1st Monday of September'         },
+		'Grandparent’s Day' : { 'rule' : '1st Monday of September +6 days' },
+		'Patriot Day'       : { 'rule' : 'September 11th'                  },
+		'Constitution Day'  : { 'rule' : 'September 17th'                  }
+	},
+	'10' : {
+		'German-American Day' : { 'rule' : 'October 6th'           },
+		'Leif Erkson Day'     : { 'rule' : 'October 9th'           },
+		'Columbus Day'        : { 'rule' : '2nd Monday of October' },
+		'Halloween'           : { 'rule' : 'October 31st'          }
+	},
+	'11' : {
+		'Veterans Day'     : { 'rule' : 'November 11th'                   },
+		'Thanksgiving Day' : { 'rule' : '4th Thursday of November'        },
+		'Black Friday'     : { 'rule' : '4th Thursday of November +1 day' }
+	},
+	'12' : {
+		'Pearl Harbor Remembrance Day'             : { 'rule' => 'December 7th'  },
+		'Immaculate Conception of the Virgin Mary' : { 'rule' => 'December 8th'  },
+		'Christmas Eve'                            : { 'rule' => 'December 24th' }
+		'Christmas'                                : { 'rule' => 'December 25th' }
+		'First Day of Kwanzaa'                     : { 'rule' => 'December 26th' }
+		'Second Day of Kwanzaa'                    : { 'rule' => 'December 27th' }
+		'Third Day of Kwanzaa'                     : { 'rule' => 'December 28th' }
+		'Fourth Day of Kwanzaa'                    : { 'rule' => 'December 29th' }
+		'Fifth Day of Kwanzaa'                     : { 'rule' => 'December 30th' }
+		'Sixth Day of Kwanzaa'                     : { 'rule' => 'December 31st' }
+		'New Year’s Eve'                           : { 'rule' => 'December 31st' }
+	}
+}
