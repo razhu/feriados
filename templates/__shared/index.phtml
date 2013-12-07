@@ -25,5 +25,22 @@
 		<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
 		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-529535354cd72841"></script>
 		<!-- AddThis Button END -->
+		<?php
+		$honey_pots = array(
+			'<a href="http://holidayapi.com/iratedungeon.php"><!-- chap-capability --></a>',
+			'<a href="http://holidayapi.com/iratedungeon.php"><img src="chap-capability.gif" height="1" width="1" border="0"></a>',
+			'<a href="http://holidayapi.com/iratedungeon.php" style="display: none;">chap-capability</a>',
+			'<div style="display: none;"><a href="http://holidayapi.com/iratedungeon.php">chap-capability</a></div>',
+			'<a href="http://holidayapi.com/iratedungeon.php"></a>',
+			'<!-- <a href="http://holidayapi.com/iratedungeon.php">chap-capability</a> -->',
+			'<div style="position: absolute; top: -250px; left: -250px;"><a href="http://holidayapi.com/iratedungeon.php">chap-capability</a></div>',
+			'<a href="http://holidayapi.com/iratedungeon.php"><span style="display: none;">chap-capability</span></a>',
+			'<a href="http://holidayapi.com/iratedungeon.php"><div style="height: 0px; width: 0px;"></div></a>',
+		);
+
+		shuffle($honey_pots);
+
+		echo current($honey_pots);
+		?>
 	</body>
 </html>
