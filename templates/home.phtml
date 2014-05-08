@@ -2,6 +2,18 @@
 
 <p>The goal of this project is to provide a comprehensive &amp; free API for obtaining information about holidays.</p>
 
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style">
+<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+<a class="addthis_button_tweet"></a>
+<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+<a class="addthis_button_linkedin_counter"></a>
+<a class="addthis_counter addthis_pill_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-529535354cd72841"></script>
+<!-- AddThis Button END -->
+
 <h2>Usage</h2>
 
 <p>To retrieve a list of holidays, simply make a GET request to <a href="http://holidayapi.com/v1/holidays" target="_blank">http://holidayapi.com/v1/holidays</a></p>
@@ -9,7 +21,7 @@
 <h3>Parameters</h3>
 
 <ul>
-	<li><code>country</code> - required, <a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" target="_blank">ISO 3166-1 alpha-1</a> format</li>
+	<li><code>country</code> - required, <a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" target="_blank">ISO 3166-1 alpha-1</a> format. Valid codes: BE, US</li>
 	<li><code>year</code> - required, 4 digits</li>
 	<li><code>month</code> - optional</li>
 	<li><code>day</code> - optional</li>
@@ -27,14 +39,12 @@
 
 <pre>{"status":200,"holidays":[{"name":"Star Wars Day","country":"US","date":"2013-05-04"}]}</pre>
 
-<h2>TODO</h2>
+<h2>Want to help?</h2>
 
-<p>At this time we only have holidays for the United States (<code>country</code> = US) and it’s only a partial list at best. We have made sure that most federal holidays are represented with the exception of Election and Inauguration days. We are also missing Lunar New Year, Password, Rosh Hashanah, Yom Kippur and Hanukkah at this time.</p>
+<p>If you are interested in contributing to this API either with design, development or helping with your country’s holiday list (each country is a JSON file), <a href="https://github.com/joshtronic/holidayapi.com" target="_blank">go fork this API over on Github</a>. If you have any suggestions or find a bug, <a href="https://github.com/joshtronic/holidayapi.com/issues">please take the time to report it</a>. If you like what I’ve created and find it to be useful, please consider tipping:</p>
 
-<p>The plan is to support as many holidays as we can with the goal of maintaining logic to calculate the date when the holiday will occur instead of relying on a database pre-populated with the holidays. We are also planning to expand outside of the United States as well.</p>
+<p><script data-gittip-username="joshtronic" src="//gttp.co/v1.js"></script></p>
 
-<p>If you are interested in contributing to this API either with design, development or helping with your country’s holiday list (each country is a JSON file), <a href="https://github.com/joshtronic/holidayapi.com" target="_blank">go fork this API over on Github</a>. If you have any suggestions or find a bug, <a href="https://github.com/joshtronic/holidayapi.com/issues">please take the time to report it</a>.</p>
+<h2>Contributors</h2>
 
-<h2>Author</h2>
-
-<p>The Holiday API was created by <a href="http://joshtronic.com">Joshua Sherman</a> (<a href="https://twitter.com/joshtronic" target="_blank">@joshtronic</a>) and is provided as a free service. If you find this API useful, you should <a href="http://amzn.com/w/2J5B5K7KYUSET" target="_blank">say thank you</a>.</p>
+<p>The Holiday API was created by <a href="https://github.com/joshtronic">Josh Sherman</a> and is provided as a free service. Special thanks to <a href="https://github.com/LGnap">LGnap</a> for providing a holiday list for Belgium.</p>

@@ -1,6 +1,6 @@
 <?php
 
-$config = array(
+$config = [
 	// {{{ Environments
 
 	'environments' => array(
@@ -11,82 +11,82 @@ $config = array(
 	// }}}
 	// {{{ PHP Options
 
-	'php' => array(
-		'local' => array(
+	'php' => [
+		'local' => [
 			'date.timezone'          => 'Universal',
 			'display_errors'         => true,
 			'error_reporting'        => -1,
 			'session.gc_maxlifetime' => 86400,
-		),
-		'production' => array(
+		],
+		'production' => [
 			'date.timezone'          => 'Universal',
 			'display_errors'         => false,
 			'error_reporting'        => -1,
 			'session.gc_maxlifetime' => 86400,
-		),
-	),
+		],
+	],
 
 	// }}}
 	// {{{ PICKLES Stuff
 
-	'pickles' => array(
+	'pickles' => [
 		'disabled'        => false,
 		'session'         => 'files',
 		'template'        => 'index',
 		'module'          => 'home',
 		//'404'             => 'error/404',
 		'cache'           => 'memcached',
-		'profiler'        => array(
+		'profiler'        => [
 			'local'      => false,
 			'production' => false,
-		),
-		'logging'        => array(
+		],
+		'logging'        => [
 			'local'      => true,
 			'production' => false,
-		),
-		'minify' => array(
+		],
+		'minify' => [
 			'local'      => true,
 			'production' => false,
-		),
-	),
+		],
+	],
 
 	// }}}
 	// {{{ Datasources
 
-	'datasources' => array(
-		'local' => array(
-			'memcached' => array(
+	'datasources' => [
+		'local' => [
+			'memcached' => [
 				'type'      => 'memcache',
 				'hostname'  => 'localhost',
 				'port'      => 11211,
 				'namespace' => 'holidayapi',
-			),
-		),
-		'production' => array(
-			'memcached' => array(
+			],
+		],
+		'production' => [
+			'memcached' => [
 				'type'      => 'memcache',
 				'hostname'  => 'localhost',
 				'port'      => 11211,
 				'namespace' => 'holidayapi',
-			),
-		),
-	),
+			],
+		],
+	],
 
 	// }}}
 	// {{{ Security Options
 
-	'security' => array(
+	'security' => [
 		'login'  => 'login',
 		'model'  => 'User',
 		'column' => 'role',
-		'levels' => array(
+		'levels' => [
 			 0 => 'ANONYMOUS',
 			10 => 'USER',
 			20 => 'ADMIN',
-		),
-	),
+		],
+	],
 
 	// }}}
-);
+];
 
 ?>

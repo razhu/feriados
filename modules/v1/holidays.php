@@ -3,8 +3,8 @@ class v1_holidays extends Module
 {
 	public function __default()
 	{
-		$payload  = array('status'  => 200);
-		$holidays = array();
+		$payload  = ['status'  => 200];
+		$holidays = [];
 
 		try
 		{
@@ -23,7 +23,7 @@ class v1_holidays extends Module
 
 			$year     = $_GET['year'];
 			$month    = isset($_GET['month'])   ? str_pad($_GET['month'], 2, '0', STR_PAD_LEFT) : '';
-			$day      = isset($_GET['day'])     ? str_pad($_GET['day'], 2, '0', STR_PAD_LEFT)   : '';
+			$day      = isset($_GET['day'])     ? str_pad($_GET['day'],   2, '0', STR_PAD_LEFT) : '';
 			$country  = isset($_GET['country']) ? strtoupper($_GET['country'])                  : '';
 			$date     = $year . '-' . $month . '-' . $day;
 
@@ -38,7 +38,7 @@ class v1_holidays extends Module
 			$cache_key        = $country . '-holidays-' . $year;
 			$country_holidays = $this->cache->get($cache_key);
 
-			//if ($country_holidays === false)
+			if ($country_holidays === false)
 			{
 				$country_file = '../countries/' . $country . '.json';
 
@@ -48,7 +48,7 @@ class v1_holidays extends Module
 				}
 
 				$country_holidays    = json_decode(file_get_contents($country_file), true);
-				$calculated_holidays = array();
+				$calculated_holidays = [];
 
 				foreach ($country_holidays as $country_holiday)
 				{
@@ -69,14 +69,14 @@ class v1_holidays extends Module
 
 					if (!isset($calculated_holidays[$calculated_date]))
 					{
-						$calculated_holidays[$calculated_date] = array();
+						$calculated_holidays[$calculated_date] = [];
 					}
 
-					$calculated_holidays[$calculated_date][] = array(
+					$calculated_holidays[$calculated_date][] = [
 						'name'    => $country_holiday['name'],
 						'country' => $country,
 						'date'    => $calculated_date,
-					);
+					];
 				}
 
 				$country_holidays = $calculated_holidays;
@@ -94,7 +94,7 @@ class v1_holidays extends Module
 
 		if ($payload['status'] == 200)
 		{
-			$payload['holidays'] = array();
+			$payload['holidays'] = [];
 
 			if ($month && $day)
 			{
