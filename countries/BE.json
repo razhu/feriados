@@ -1,0 +1,21 @@
+[
+	{ "name" : "Jour de l'An",                                 "rule" : "January 1st"                           },
+	{ "name" : "Épiphanie",                                    "rule" : "January 6th"                           },
+	{ "name" : "Fête du Travail",                              "rule" : "May 1st"                               },
+	{ "name" : "Fête de la Saint-Jean",                        "rule" : "June 24th"                             },
+	{ "name" : "Fête nationale",                               "rule" : "July 21th"                             },
+	{ "name" : "Fête de la Communauté flamande",               "rule" : "July 11th"                             },
+	{ "name" : "Assomption",                                   "rule" : "August 15th"                           },
+	{ "name" : "Fête de la Communauté française de Belgique",  "rule" : "September 27th"                        },
+	{ "name" : "Toussaint",                                    "rule" : "November 1th"                          },
+	{ "name" : "Fête des morts",                               "rule" : "November 2th"                          },
+	{ "name" : "Armistice de 1918",                            "rule" : "November 11th"                         },
+	{ "name" : "Fête du Roi",                                  "rule" : "November 15th"                         },
+	{ "name" : "Fête de la Communauté germanophone",           "rule" : "November 15th"                         },
+	{ "name" : "Saint-Nicolas",                                "rule" : "December 6th"                          },
+	{ "name" : "Noël",                                         "rule" : "December 25th"                         },
+	{ "name" : "Pâques",                                       "rule" : "%EASTER"                               },
+	{ "name" : "Mardi gras",                                   "rule" : "%EASTER -47 days"                      },
+	{ "name" : "Jeudi de l'Ascension",                         "rule" : "%EASTER +39 days"                      },
+	{ "name" : "Lundi de Pentecôte",                           "rule" : "%EASTER +50 days"                      }
+]
