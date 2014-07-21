@@ -5,6 +5,6 @@
 { "name" : "Early May Bank Holiday", "rule" : "First Monday of May" },
 { "name" : "Spring Bank Holiday", "rule" : "Last Monday of May" },
 { "name" : "Summer Bank Holiday", "rule" : "Last Monday of August" },
-{ "name" : "Christmas", "rule" : "December 25th" },
-{ "name" : "Boxing Day", "rule" : "December 26th" }
+{ "name" : "Christmas (possibly in lieu)", "rule" : "24 December +1 weekday" },
+{ "name" : "Boxing Day (possibly in lieu)", "rule" : "24 December +2 weekday" }
 ]
