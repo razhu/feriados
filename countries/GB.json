@@ -1,7 +1,10 @@
 [
 { "name" : "New Year's Day", "rule" : "January 1st" },
-{ "name" : "May Day", "rule" : "First Monday of May" },
-{ "name" : "Christmas", "rule" : "December 25th" },
 { "name" : "Easter Monday", "rule" : "%EASTER +1 day" },
-{ "name" : "Good Friday", "rule" : "%EASTER -2 days" }
+{ "name" : "Good Friday", "rule" : "%EASTER -2 days" },
+{ "name" : "Early May Bank Holiday", "rule" : "First Monday of May" },
+{ "name" : "Spring Bank Holiday", "rule" : "Last Monday of May" },
+{ "name" : "Summer Bank Holiday", "rule" : "Last Monday of August" },
+{ "name" : "Christmas", "rule" : "December 25th" },
+{ "name" : "Boxing Day", "rule" : "December 26th" }
 ]
