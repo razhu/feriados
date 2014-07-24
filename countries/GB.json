@@ -1,0 +1,10 @@
+[
+{ "name" : "New Year's Day", "rule" : "January 1st" },
+{ "name" : "Easter Monday", "rule" : "%EASTER +1 day" },
+{ "name" : "Good Friday", "rule" : "%EASTER -2 days" },
+{ "name" : "Early May Bank Holiday", "rule" : "First Monday of May" },
+{ "name" : "Spring Bank Holiday", "rule" : "Last Monday of May" },
+{ "name" : "Summer Bank Holiday", "rule" : "Last Monday of August" },
+{ "name" : "Christmas (possibly in lieu)", "rule" : "24 December +1 weekday" },
+{ "name" : "Boxing Day (possibly in lieu)", "rule" : "24 December +2 weekday" }
+]
