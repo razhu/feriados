@@ -1,50 +1,78 @@
-<h1>Holiday API</h1>
+<div class="well lead">
+	The goal of this project is to provide a comprehensive &amp; free API for obtaining information about holidays.
 
-<p>The goal of this project is to provide a comprehensive &amp; free API for obtaining information about holidays.</p>
-
-<!-- AddThis Button BEGIN -->
-<div class="addthis_toolbox addthis_default_style">
-<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-<a class="addthis_button_tweet"></a>
-<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
-<a class="addthis_button_linkedin_counter"></a>
-<a class="addthis_counter addthis_pill_style"></a>
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<div class="addthis_responsive_sharing"></div>
 </div>
-<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-529535354cd72841"></script>
-<!-- AddThis Button END -->
 
-<h2>Usage</h2>
+<div class="well">
+	<h2>Usage</h2>
+	<p>To retrieve a list of holidays, simply make a GET request to<br><a href="http://holidayapi.com/v1/holidays" target="_blank">http://holidayapi.com/v1/holidays</a></p>
+</div>
 
-<p>To retrieve a list of holidays, simply make a GET request to <a href="http://holidayapi.com/v1/holidays" target="_blank">http://holidayapi.com/v1/holidays</a></p>
+<div class="well">
+	<h3>Parameters</h3>
+	<div class="row">
+		<div class="col-xs-3"><code>country</code></div>
+		<div class="col-xs-9">required, <a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-3" target="_blank">ISO 3166-1 alpha-1</a> format (BE, GB or US)</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3"><code>year</code></div>
+		<div class="col-xs-9">required, <a href="http://en.wikipedia.org/wiki/ISO_8601#Years" target="_blank">ISO 8601</a> format (YYYY)</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3"><code>month</code></div>
+		<div class="col-xs-9">optional</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3"><code>day</code></div>
+		<div class="col-xs-9">optional</div>
+	</div>
+</div>
 
-<h3>Parameters</h3>
+<div class="well">
+	<h3>Status Codes</h3>
+	<div class="row">
+		<div class="col-xs-3"><code>300</code></div>
+		<div class="col-xs-9">No one goof’d</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3"><code>400</code></div>
+		<div class="col-xs-9">You dun goof’d</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3"><code>500</code></div>
+		<div class="col-xs-9">We dun goof’d</div>
+	</div>
+</div>
 
-<ul>
-	<li><code>country</code> - required, <a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" target="_blank">ISO 3166-1 alpha-1</a> format. Valid codes: BE, GB and US</li>
-	<li><code>year</code> - required, 4 digits</li>
-	<li><code>month</code> - optional</li>
-	<li><code>day</code> - optional</li>
-</ul>
+<div class="well">
+	<h3>Response</h3>
+	<pre>{
+&nbsp;&nbsp;"status": 200,
+&nbsp;&nbsp;"holidays": [
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name": "Star Wars Day",
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"country": "US",
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"date": "2013-05-04"
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;]
+}</pre>
+</div>
 
-<h3>Status Codes</h3>
+<div class="well">
+	<h3>Want to help?</h3>
+	<div class="row">
+		<div class="col-xs-12 col-sm-9">
+			<p>You can contribute by <a href="https://github.com/joshtronic/holidayapi.com" target="_blank">forking this project</a> and adding your country’s holiday list, each country is a JSON file. If you have any suggestions or find a bug, <a href="https://github.com/joshtronic/holidayapi.com/issues">please take the time to tell us</a>. This is a labor of love, please consider tipping.</p>
+		</div>
+		<div class="col-xs-12 col-sm-3">
+			<script data-gittip-username="joshtronic" src="//gttp.co/v1.js"></script>
+		</div>
+	</div>
+</div>
 
-<ul>
-	<li><strong>200</strong>: No one goof’d</li>
-	<li><strong>400</strong>: You dun goof’d</li>
-	<li><strong>500</strong>: We dun goof’d</li>
-</ul>
-
-<h3>Response</h3>
-
-<pre>{"status":200,"holidays":[{"name":"Star Wars Day","country":"US","date":"2013-05-04"}]}</pre>
-
-<h2>Want to help?</h2>
-
-<p>If you are interested in contributing to this API either with design, development or helping with your country’s holiday list (each country is a JSON file), <a href="https://github.com/joshtronic/holidayapi.com" target="_blank">go fork this API over on Github</a>. If you have any suggestions or find a bug, <a href="https://github.com/joshtronic/holidayapi.com/issues">please take the time to report it</a>. If you like what I’ve created and find it to be useful, please consider tipping:</p>
-
-<p><script data-gittip-username="joshtronic" src="//gttp.co/v1.js"></script></p>
-
-<h2>Contributors</h2>
-
-<p>The Holiday API was created by <a href="https://github.com/joshtronic">Josh Sherman</a> and is provided as a free service. Special thanks to <a href="https://github.com/LGnap">LGnap</a> for providing a holiday list for Belgium and <a href="https://github.com/WanderingZombie">John Nicholls</a> for his efforts on the England &amp; Wales.</p>
+<div class="well">
+	<h3>Contributors</h3>
+	<p>Holiday API was conceived and coded by <a href="http://joshtronic.com">Josh Sherman</a> of <a href="http://gravityblvd.com" target="_blank">Gravity Boulevard</a> and is provided as a free service. Special thanks to <a href="https://github.com/LGnap">LGnap</a> and <a href="https://github.com/WanderingZombie">John Nicholls</a> for contributing additional country files. Website and logo artfully designed by <a href="https://twitter.com/thegeoffoliver" target="_blank">Geoff Oliver</a> of <a href="http://www.plan8studios.com/">Plan8 Studios</a>. Holiday API is <a href="https://www.linode.com/?r=5f682793582e82ce686747c851b998dc1f86a55b" target="_blank">proudly hosted by Linode</a>.</p>
+</div>
