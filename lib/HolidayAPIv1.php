@@ -7,7 +7,9 @@ class v1
 
     public function __construct($cache = false)
     {
-        $this->cache = $cache;
+        if ($_SERVER['SERVER_NAME'] != '127.0.0.1') {
+            $this->cache = $cache;
+        }
     }
 
     public function getHolidays()
