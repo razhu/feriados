@@ -3,7 +3,14 @@ namespace HolidayAPI;
 
 class v1
 {
-    function getHolidays()
+    private $cache = false;
+
+    public function __construct($cache = false)
+    {
+        $this->cache = $cache;
+    }
+
+    public function getHolidays()
     {
         if (ini_get('date.timezone') == '') {
             date_default_timezone_set('UTC');
@@ -33,11 +40,16 @@ class v1
                 }
             }
 
-            $cache_key        = $country . '-holidays-' . $year;
-            //$country_holidays = $this->cache->get($cache_key);
-            $country_holidays = false;
+            if ($this->cache) {
+                $cache_key        = 'holidayapi:' . $country . ':holidays:' . $year;
+                $country_holidays = $this->cache->get($cache_key);
+            } else {
+                $country_holidays = false;
+            }
 
-            if ($country_holidays === false) {
+            if ($country_holidays) {
+                $country_holidays = unserialize($country_holidays);
+            } else {
                 $country_file = '../data/' . $country . '.json';
 
                 if (!file_exists($country_file)) {
@@ -71,7 +83,9 @@ class v1
 
                 $country_holidays = $calculated_holidays;
 
-                //$this->cache->set($cache_key, $country_holidays, Time::HOUR);
+                if ($this->cache) {
+                    $this->cache->set($cache_key, serialize($country_holidays), 3600);
+                }
             }
         } catch (\Exception $e) {
             $payload['status'] = 400;
