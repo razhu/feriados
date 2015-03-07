@@ -66,21 +66,38 @@ class v1
                         $rule = str_replace('%Y', $year, $country_holiday['rule']);
                     } elseif (strstr($country_holiday['rule'], '%EASTER')) {
                         $rule = str_replace('%EASTER', date('Y-m-d', strtotime($year . '-03-21 +' . easter_days($year) . ' days')), $country_holiday['rule']);
+                    } elseif (in_array($country, ['BR', 'US']) && strstr($country_holiday['rule'], '%ELECTION')) {
+                        switch ($country) {
+                            case 'BR':
+                                $years = range(2014, $year, 2);
+                                break;
+                            case 'US':
+                                $years = range(1788, $year, 4);
+                                break;
+                        }
+
+                        if (in_array($year, $years)) {
+                            $rule = str_replace('%ELECTION', $year, $country_holiday['rule']);
+                        } else {
+                            $rule = false;
+                        }
                     } else {
                         $rule = $country_holiday['rule'] . ' ' . $year;
                     }
 
-                    $calculated_date = date('Y-m-d', strtotime($rule));
+                    if ($rule) {
+                        $calculated_date = date('Y-m-d', strtotime($rule));
 
-                    if (!isset($calculated_holidays[$calculated_date])) {
-                        $calculated_holidays[$calculated_date] = [];
+                        if (!isset($calculated_holidays[$calculated_date])) {
+                            $calculated_holidays[$calculated_date] = [];
+                        }
+
+                        $calculated_holidays[$calculated_date][] = [
+                            'name'    => $country_holiday['name'],
+                            'country' => $country,
+                            'date'    => $calculated_date,
+                        ];
                     }
-
-                    $calculated_holidays[$calculated_date][] = [
-                        'name'    => $country_holiday['name'],
-                        'country' => $country,
-                        'date'    => $calculated_date,
-                    ];
                 }
 
                 $country_holidays = $calculated_holidays;
