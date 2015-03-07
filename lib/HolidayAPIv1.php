@@ -22,18 +22,16 @@ class v1
         $holidays = [];
 
         try {
-            if ($_SERVER['REQUEST_METHOD'] != 'GET') {
-                throw new \Exception('This API only supports GET requests.');
-            } elseif (!isset($_GET['country']) || trim($_GET['country']) == '') {
+            if (!isset($_REQUEST['country']) || trim($_REQUEST['country']) == '') {
                 throw new \Exception('The country parameter is required.');
-            } elseif (!isset($_GET['year']) || trim($_GET['year']) == '') {
+            } elseif (!isset($_REQUEST['year']) || trim($_REQUEST['year']) == '') {
                 throw new \Exception('The year parameter is required.');
             }
 
-            $year     = $_GET['year'];
-            $month    = isset($_GET['month'])   ? str_pad($_GET['month'], 2, '0', STR_PAD_LEFT) : '';
-            $day      = isset($_GET['day'])     ? str_pad($_GET['day'],   2, '0', STR_PAD_LEFT) : '';
-            $country  = isset($_GET['country']) ? strtoupper($_GET['country'])                  : '';
+            $year     = $_REQUEST['year'];
+            $month    = isset($_REQUEST['month'])   ? str_pad($_REQUEST['month'], 2, '0', STR_PAD_LEFT) : '';
+            $day      = isset($_REQUEST['day'])     ? str_pad($_REQUEST['day'],   2, '0', STR_PAD_LEFT) : '';
+            $country  = isset($_REQUEST['country']) ? strtoupper($_REQUEST['country'])                  : '';
             $date     = $year . '-' . $month . '-' . $day;
 
             if ($month && $day) {
