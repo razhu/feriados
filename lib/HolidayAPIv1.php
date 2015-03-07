@@ -32,7 +32,16 @@ class v1
             $month    = isset($_REQUEST['month'])   ? str_pad($_REQUEST['month'], 2, '0', STR_PAD_LEFT) : '';
             $day      = isset($_REQUEST['day'])     ? str_pad($_REQUEST['day'],   2, '0', STR_PAD_LEFT) : '';
             $country  = isset($_REQUEST['country']) ? strtoupper($_REQUEST['country'])                  : '';
+            $previous = isset($_REQUEST['previous']);
+            $upcoming = isset($_REQUEST['upcoming']);
             $date     = $year . '-' . $month . '-' . $day;
+
+            if (($previous || $upcoming) && (!$month || !$day)) {
+                $request = $previous ? 'previous' : 'upcoming';
+                $missing = !$month   ? 'month'    : 'day';
+
+                throw new \Exception('The ' . $missing . ' parameter is required when requesting ' . $request . ' holidays.');
+            }
 
             if ($month && $day) {
                 if (strtotime($date) === false) {
@@ -40,6 +49,58 @@ class v1
                 }
             }
 
+            $country_holidays = $this->calculateHolidays($country, $year, $previous || $upcoming);
+        } catch (\Exception $e) {
+            $payload['status'] = 400;
+            $payload['error']  = $e->getMessage();
+        }
+
+        $status_message = $payload['status'] . ' ' . ($payload['status'] == 200 ? 'OK' : 'Bad Request');
+
+        foreach (['HTTP/1.1', 'Status:'] as $header) {
+            header($header . ' ' . $status_message, true, $payload['status']);
+        }
+
+        if ($payload['status'] == 200) {
+            $payload['holidays'] = [];
+
+            if ($month && $day) {
+                if ($previous) {
+                    $country_holidays = $this->flatten($date, $country_holidays[$year - 1], $country_holidays[$year]);
+                    prev($country_holidays);
+                    $payload['holidays'] = current($country_holidays);
+                } elseif ($upcoming) {
+                    $country_holidays = $this->flatten($date, $country_holidays[$year], $country_holidays[$year + 1]);
+                    next($country_holidays);
+                    $payload['holidays'] = current($country_holidays);
+                } elseif (isset($country_holidays[$year][$date])) {
+                    $payload['holidays'] = $country_holidays[$year][$date];
+                }
+            } elseif ($month) {
+                foreach ($country_holidays[$year] as $date => $country_holiday) {
+                    if (substr($date, 0, 7) == $year . '-' . $month) {
+                        $payload['holidays'] = array_merge($payload['holidays'], $country_holiday);
+                    }
+                }
+            } else {
+                $payload['holidays'] = $country_holidays[$year];
+            }
+        }
+
+        return $payload;
+    }
+
+    private function calculateHolidays($country, $year, $range = false)
+    {
+        $return = [];
+
+        if ($range) {
+            $years = [$year - 1, $year, $year + 1];
+        } else {
+            $years = [$year];
+        }
+
+        foreach ($years as $year) {
             if ($this->cache) {
                 $cache_key        = 'holidayapi:' . $country . ':holidays:' . $year;
                 $country_holidays = $this->cache->get($cache_key);
@@ -122,36 +183,29 @@ class v1
                     $this->cache->setex($cache_key, 3600, serialize($country_holidays));
                 }
             }
-        } catch (\Exception $e) {
-            $payload['status'] = 400;
-            $payload['error']  = $e->getMessage();
+
+            $return[$year] = $country_holidays;
         }
 
-        $status_message = $payload['status'] . ' ' . ($payload['status'] == 200 ? 'OK' : 'Bad Request');
+        return $return;
+    }
 
-        foreach (['HTTP/1.1', 'Status:'] as $header) {
-            header($header . ' ' . $status_message, true, $payload['status']);
+    private function flatten($date, $array1, $array2)
+    {
+        $holidays = array_merge($array1, $array2);
+
+        // Injects the current date as a placeholder
+        if (!isset($holidays[$date])) {
+            $holidays[$date] = false;
+            ksort($holidays);
         }
 
-        if ($payload['status'] == 200) {
-            $payload['holidays'] = [];
-
-            if ($month && $day) {
-                if (isset($country_holidays[$date])) {
-                    $payload['holidays'] = $country_holidays[$date];
-                }
-            } elseif ($month) {
-                foreach ($country_holidays as $date => $country_holiday) {
-                    if (substr($date, 0, 7) == $year . '-' . $month) {
-                        $payload['holidays'] = array_merge($payload['holidays'], $country_holiday);
-                    }
-                }
-            } else {
-                $payload['holidays'] = $country_holidays;
-            }
+        // Sets the internal pointer to today
+        while (key($holidays) !== $date) {
+            next($holidays);
         }
 
-        return $payload;
+        return $holidays;
     }
 }
 
