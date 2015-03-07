@@ -1,0 +1,19 @@
+{
+  "name": "joshtronic/holidayapi.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Josh Sherman",
+      "email": "josh@gravityblvd.com",
+      "homepage": "http://joshtronic.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "HolidayAPI\\" : "src/"
+    }
+  }
+}

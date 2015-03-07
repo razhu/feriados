@@ -10,6 +10,7 @@ keeping a static list in a database.
 To install the dependencies:
 
 ```shell
+composer install
 npm install
 ```
 
