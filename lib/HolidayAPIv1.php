@@ -102,7 +102,7 @@ class v1
 
                 ksort($country_holidays);
 
-                foreach ($country_holidays as $date => $date_holidays) {
+                foreach ($country_holidays as $date_key => $date_holidays) {
                     usort($date_holidays, function($a, $b)
                     {
                         $a = $a['name'];
@@ -115,7 +115,7 @@ class v1
                         return $a < $b ? -1 : 1;
                     });
 
-                    $country_holidays[$date] = $date_holidays;
+                    $country_holidays[$date_key] = $date_holidays;
                 }
 
                 if ($this->cache) {
