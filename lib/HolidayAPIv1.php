@@ -87,6 +87,22 @@ class v1
 
                 ksort($country_holidays);
 
+                foreach ($country_holidays as $date => $date_holidays) {
+                    usort($date_holidays, function($a, $b)
+                    {
+                        $a = $a['name'];
+                        $b = $b['name'];
+
+                        if ($a == $b) {
+                            return 0;
+                        }
+
+                        return $a < $b ? -1 : 1;
+                    });
+
+                    $country_holidays[$date] = $date_holidays;
+                }
+
                 if ($this->cache) {
                     $this->cache->setex($cache_key, 3600, serialize($country_holidays));
                 }
