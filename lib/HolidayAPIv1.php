@@ -143,7 +143,7 @@ class v1
             } elseif ($month) {
                 foreach ($country_holidays as $date => $country_holiday) {
                     if (substr($date, 0, 7) == $year . '-' . $month) {
-                        $payload['holidays'][] = $country_holiday;
+                        $payload['holidays'] = array_merge($payload['holidays'], $country_holiday);
                     }
                 }
             } else {
