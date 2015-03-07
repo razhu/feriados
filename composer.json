@@ -1,0 +1,13 @@
+{
+    "name": "joshtronic/holidayapi.com",
+    "require": {
+        "slim/slim": "~2.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Josh Sherman",
+            "email": "josh@gravityblvd.com"
+        }
+    ]
+}
