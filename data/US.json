@@ -30,6 +30,7 @@
 	{ "name" : "Leif Erkson Day",                          "rule" : "October 9th"                           },
 	{ "name" : "Columbus Day",                             "rule" : "Second Monday of October"              },
 	{ "name" : "Halloween",                                "rule" : "October 31st"                          },
+  { "name" : "Election Day",                             "rule" : "First Monday of November %Y +1 day"    },
 	{ "name" : "Veterans Day",                             "rule" : "November 11th"                         },
 	{ "name" : "Thanksgiving Day",                         "rule" : "Fourth Thursday of November"           },
 	{ "name" : "Black Friday",                             "rule" : "Fourth Thursday of November %Y +1 day" },
