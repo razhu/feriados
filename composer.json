@@ -11,6 +11,9 @@
   "require": {
     "php": ">=5.4"
   },
+  "suggest": {
+    "predis/predis": "Required to use caching"
+  },
   "autoload": {
     "psr-4": {
       "HolidayAPI\\" : "lib/"

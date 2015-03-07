@@ -7,18 +7,7 @@ switch ($request_uri[0]) {
         break;
 
     case '/v1/holidays':
-        require '../lib/HolidayAPIv1.php';
-        $api = new \HolidayAPI\v1();
-
-        header('Content-Type: application/json; charset=utf-8');
-
-        $flags = JSON_UNESCAPED_UNICODE;
-
-        if (isset($_REQUEST['pretty'])) {
-            $flags |= JSON_PRETTY_PRINT;
-        }
-
-        echo json_encode($api->getHolidays(), $flags);
+        require '../views/api.php';
         break;
 
     default:
