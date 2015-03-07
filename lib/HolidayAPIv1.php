@@ -85,6 +85,8 @@ class v1
 
                 $country_holidays = $calculated_holidays;
 
+                ksort($country_holidays);
+
                 if ($this->cache) {
                     $this->cache->setex($cache_key, 3600, serialize($country_holidays));
                 }
