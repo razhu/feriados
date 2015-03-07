@@ -36,7 +36,9 @@ class v1
             $upcoming = isset($_REQUEST['upcoming']);
             $date     = $year . '-' . $month . '-' . $day;
 
-            if (($previous || $upcoming) && (!$month || !$day)) {
+            if ($previous && $upcoming) {
+                throw new \Exception('You cannot request both previous and upcoming holidays.');
+            } elseif (($previous || $upcoming) && (!$month || !$day)) {
                 $request = $previous ? 'previous' : 'upcoming';
                 $missing = !$month   ? 'month'    : 'day';
 

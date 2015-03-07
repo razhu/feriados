@@ -1,6 +1,6 @@
-# holidayapi.com
+# Holiday API
 
-HolidayAPI is website (and soon to be stand-alone PHP class) for obtaining
+Holiday API is website (and soon to be stand-alone PHP class) for obtaining
 information about holidays. The project was started as a personal challenge to
 see if I could generate holiday lists on the fly for any date instead of
 keeping a static list in a database.

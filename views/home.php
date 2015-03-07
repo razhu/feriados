@@ -22,26 +22,42 @@
 
                 <div class="well">
                     <h2>Usage</h2>
-                    <p>To retrieve a list of holidays, simply make a GET request to<br><a href="http://holidayapi.com/v1/holidays" target="_blank">http://holidayapi.com/v1/holidays</a></p>
+                    <p>To retrieve a list of holidays, simply make a request to<br><a href="http://holidayapi.com/v1/holidays" target="_blank">http://holidayapi.com/v1/holidays</a></p>
                 </div>
 
                 <div class="well">
                     <h3>Parameters</h3>
+
+                    <h4>Required</h4>
                     <div class="row">
                         <div class="col-xs-3"><code>country</code></div>
-                        <div class="col-xs-9">required, <a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" target="_blank">ISO 3166-1 alpha-2</a> format (BE, BR, GB or US)</div>
+                        <div class="col-xs-9"><a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" target="_blank">ISO 3166-1 alpha-2</a> format (BE, BR, GB or US)</div>
                     </div>
                     <div class="row">
                         <div class="col-xs-3"><code>year</code></div>
-                        <div class="col-xs-9">required, <a href="http://en.wikipedia.org/wiki/ISO_8601#Years" target="_blank">ISO 8601</a> format (YYYY)</div>
+                        <div class="col-xs-9"><a href="http://en.wikipedia.org/wiki/ISO_8601#Years" target="_blank">ISO 8601</a> format (CCYY)</div>
                     </div>
+
+                    <h4>Optional</h4>
                     <div class="row">
                         <div class="col-xs-3"><code>month</code></div>
-                        <div class="col-xs-9">optional</div>
+                        <div class="col-xs-9">1 or 2 digit month (1-12)</div>
                     </div>
                     <div class="row">
                         <div class="col-xs-3"><code>day</code></div>
-                        <div class="col-xs-9">optional</div>
+                        <div class="col-xs-9">1 or 2 digit day (1-31 depending on the month)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3"><code>previous</code></div>
+                        <div class="col-xs-9">returns the previous holidays based on the date</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3"><code>upcoming</code></div>
+                        <div class="col-xs-9">returns the upcoming holidays based on the date</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3"><code>pretty</code></div>
+                        <div class="col-xs-9">prettifies returned results</div>
                     </div>
                 </div>
 
@@ -75,12 +91,12 @@
 
                 <div class="well">
                     <h3>Want to help?</h3>
-                    <p>You can contribute by <a href="https://github.com/joshtronic/holidayapi.com" target="_blank">forking this project</a> and adding your country’s holiday list, each country is a JSON file. If you have any suggestions or find a bug, <a href="https://github.com/joshtronic/holidayapi.com/issues">please take the time to tell us</a>. This is a labor of love, please consider tipping.</p>
+                    <p>You can contribute by <a href="https://github.com/joshtronic/holidayapi.com" target="_blank">forking this project</a> and adding your country’s holiday list, each country is a JSON file. If you have any suggestions or find a bug, <a href="https://github.com/joshtronic/holidayapi.com/issues">please take the time to tell us</a>.</p>
                 </div>
 
                 <div class="well">
                     <h3>Contributors</h3>
-                    <p>Holiday API was conceived and coded by <a href="http://joshtronic.com">Josh Sherman</a> of <a href="http://gravityblvd.com" target="_blank">Gravity Boulevard</a> and is provided as a free service. Special thanks to <a href="https://github.com/LGnap">LGnap</a>, <a href="https://github.com/WanderingZombie">John Nicholls</a> and <a href="https://github.com/GA114">Antonio Gurgel</a> for contributing additional country files. Website and logo artfully designed by <a href="https://twitter.com/thegeoffoliver" target="_blank">Geoff Oliver</a> of <a href="http://www.plan8studios.com/">Plan8 Studios</a>. Holiday API is <a href="https://www.linode.com/?r=5f682793582e82ce686747c851b998dc1f86a55b" target="_blank">proudly hosted by Linode</a>.</p>
+                    <p>Holiday API was conceived and coded by <a href="http://joshtronic.com">Josh Sherman</a> and is provided as a free service. Special thanks to <a href="https://github.com/LGnap">LGnap</a>, <a href="https://github.com/WanderingZombie">John Nicholls</a> and <a href="https://github.com/GA114">Antonio Gurgel</a> for contributing additional country files. Website and logo artfully designed by <a href="https://twitter.com/thegeoffoliver" target="_blank">Geoff Oliver</a> of <a href="http://www.plan8studios.com/">Plan8 Studios</a>. Holiday API is <a href="https://www.linode.com/?r=5f682793582e82ce686747c851b998dc1f86a55b" target="_blank">proudly hosted by Linode</a>.</p>
                 </div>
                 <footer class="lead">
                     Built with <span class="heart">&hearts;</span> in <a href="http://builtwithlove.in/gravityblvd" target="_blank">Tampa, FL</a>
