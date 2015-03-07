@@ -84,7 +84,7 @@ class v1
                 $country_holidays = $calculated_holidays;
 
                 if ($this->cache) {
-                    $this->cache->set($cache_key, serialize($country_holidays), 3600);
+                    $this->cache->setex($cache_key, 3600, serialize($country_holidays));
                 }
             }
         } catch (\Exception $e) {
