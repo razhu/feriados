@@ -1,0 +1,14 @@
+[
+    { "name" : "1. nyttårsdag", "rule" : "January 1st" },
+    { "name" : "2. påskedag", "rule" : "%EASTER +1 day" },
+    { "name" : "Palmesøndag", "rule" : "%EASTER -7 days" },
+    { "name" : "Skjærtorsdag", "rule" : "%EASTER -3 days" },
+    { "name" : "Langfredag", "rule" : "%EASTER -2 days" },
+    { "name" : "Arbeidernes internasjonale kampdag", "rule" : "1 May" },
+    { "name" : "Kristi himmelfartsdag", "rule" : "%EASTER +39 day" },
+    { "name" : "Grunnlovsdag", "rule" : "17 May" },
+    { "name" : "1. pinsedag", "rule" : "%EASTER +49 day" },
+    { "name" : "2. pinsedag", "rule" : "%EASTER +50 day" },
+    { "name" : "1. juledag", "rule" : "24 December +1 weekday" },
+    { "name" : "2. juledag", "rule" : "24 December +2 weekday" }
+]
