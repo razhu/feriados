@@ -96,10 +96,10 @@
 
                 <div class="well">
                     <h3>Contributors</h3>
-                    <p>Holiday API was conceived and coded by <a href="http://joshtronic.com">Josh Sherman</a> and is provided as a free service. Special thanks to <a href="https://github.com/LGnap">LGnap</a>, <a href="https://github.com/WanderingZombie">John Nicholls</a> and <a href="https://github.com/GA114">Antonio Gurgel</a> for contributing additional country files. Website and logo artfully designed by <a href="https://twitter.com/thegeoffoliver" target="_blank">Geoff Oliver</a> of <a href="http://www.plan8studios.com/">Plan8 Studios</a>. Holiday API is <a href="https://www.linode.com/?r=5f682793582e82ce686747c851b998dc1f86a55b" target="_blank">proudly hosted by Linode</a>.</p>
+                    <p>Holiday API was conceived and coded by <a href="http://joshtronic.com">Josh Sherman</a> and is provided as a free service. Special thanks to <a href="https://github.com/LGnap">LGnap</a>, <a href="https://github.com/WanderingZombie">John Nicholls</a>, <a href="https://github.com/GA114">Antonio Gurgel</a> and <a href="https://github.com/azzlack">Ove Andersen</a> for contributing additional country files. Website and logo artfully designed by <a href="https://twitter.com/thegeoffoliver" target="_blank">Geoff Oliver</a> of <a href="http://www.plan8studios.com/">Plan8 Studios</a>. Holiday API is <a href="https://www.linode.com/?r=5f682793582e82ce686747c851b998dc1f86a55b" target="_blank">proudly hosted by Linode</a>.</p>
                 </div>
                 <footer class="lead">
-                    Built with <span class="heart">&hearts;</span> in <a href="http://builtwithlove.in/gravityblvd" target="_blank">Tampa, FL</a>
+                    Built with <span class="heart">&hearts;</span> by <a href="http://joshtronic.com/?ref=holidayapi">@joshtronic</a>
                 </footer>
             </div>
         </div>
