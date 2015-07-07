@@ -7,7 +7,7 @@
 	{ "name" : "Toussaint",                                    "rule" : "November 1th"                          },
 	{ "name" : "Armistice de 1918",                            "rule" : "November 11th"                         },
 	{ "name" : "Noël",                                         "rule" : "December 25th"                         },
-	{ "name" : "Lundi de Pâques",                              "rule" : "%EASTER"                               },
+	{ "name" : "Lundi de Pâques",                              "rule" : "%EASTER +1 days"              			},
 	{ "name" : "Jeudi de l'Ascension",                         "rule" : "%EASTER +39 days"                      },
   	{ "name" : "Lundi de Pentecôte",                           "rule" : "%EASTER +50 days"                      }
 ]
