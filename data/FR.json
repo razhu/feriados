@@ -1,0 +1,13 @@
+[
+	{ "name" : "Jour de l'an",                                 "rule" : "January 1st"                           },
+	{ "name" : "Fête du Travail",                              "rule" : "May 1st"                               },
+  	{ "name" : "Fête de la Victoire 1945",                     "rule" : "May 8th"                               },
+	{ "name" : "Fête nationale",                               "rule" : "July 14th"                             },
+	{ "name" : "Assomption",                                   "rule" : "August 15th"                           },
+	{ "name" : "Toussaint",                                    "rule" : "November 1th"                          },
+	{ "name" : "Armistice de 1918",                            "rule" : "November 11th"                         },
+	{ "name" : "Noël",                                         "rule" : "December 25th"                         },
+	{ "name" : "Lundi de Pâques",                              "rule" : "%EASTER +1 days"              			},
+	{ "name" : "Jeudi de l'Ascension",                         "rule" : "%EASTER +39 days"                      },
+  	{ "name" : "Lundi de Pentecôte",                           "rule" : "%EASTER +50 days"                      }
+]
