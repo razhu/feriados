@@ -56,6 +56,10 @@
                         <div class="col-xs-9">returns the upcoming holidays based on the date</div>
                     </div>
                     <div class="row">
+                        <div class="col-xs-3"><code>language</code></div>
+                        <div class="col-xs-9"><a href="http://en.wikipedia.org/wiki/ISO_639-1" target="_blank">ISO 639-1</a> format (EN, ES, RU, FR)<br/> returns holidays in the selected language (<strong>if available</strong>)</div>
+                    </div>
+                    <div class="row">
                         <div class="col-xs-3"><code>pretty</code></div>
                         <div class="col-xs-9">prettifies returned results</div>
                     </div>
