@@ -32,6 +32,7 @@ class v1
             $month    = isset($_REQUEST['month'])   ? str_pad($_REQUEST['month'], 2, '0', STR_PAD_LEFT) : '';
             $day      = isset($_REQUEST['day'])     ? str_pad($_REQUEST['day'],   2, '0', STR_PAD_LEFT) : '';
             $country  = isset($_REQUEST['country']) ? strtoupper($_REQUEST['country'])                  : '';
+            $language = isset($_REQUEST['language'])? strtoupper($_REQUEST['language'])                 : '';
             $previous = isset($_REQUEST['previous']);
             $upcoming = isset($_REQUEST['upcoming']);
             $date     = $year . '-' . $month . '-' . $day;
@@ -86,6 +87,10 @@ class v1
                 }
             } else {
                 $payload['holidays'] = $country_holidays[$year];
+            }
+
+            if($language){
+                $payload['holidays'] = $this -> filterLanguage($language, $payload['holidays']);
             }
         }
 
@@ -208,6 +213,42 @@ class v1
         }
 
         return $holidays;
+    }
+
+    private function filterLanguage($language, $holidays){
+        $filtered = [];
+        
+        foreach ($holidays as $holiday => $days) {
+            
+            if(!array_key_exists('name',$days)){
+                // Filter Subarray - Month is Requested
+                $names = [];
+                foreach ($days as $day => $value) {
+                    if(isset($value['name'][$language])){
+                        $value['name'] = $value['name'][$language];
+                        array_push($names,$value);
+                    }else{
+                        // Language Not Found/Available
+                        return $holidays;
+                    }
+                }
+                $filtered[$holiday] = $names;    
+            }else{
+                // Regular Filter - No Month Specified
+                if(isset($days['name'][$language])){
+                    $days['name'] = $days['name'][$language];
+                    $filtered[$holiday] = $days;
+                }else{
+                    // Language Not Found/Available
+                    return $holidays;
+                }
+            }
+            
+
+        }
+
+        return $filtered;
+
     }
 }
 

@@ -1,0 +1,167 @@
+[
+
+  {
+    "name": {
+      "ES": "Año Nuevo",
+      "EN": "New Year's Day"
+    },
+    "rule": "January 1st"
+  }, {
+    "name": {
+      "ES": "Vispera de Reyes",
+      "EN": "Three Kings Day Eve"
+    },
+    "rule": "January 5th"
+  }, {
+    "name": {
+      "ES": "Día de los Tres Reyes Magos",
+      "EN": "Three Kings Day or Epiphany"
+    },
+    "rule": "January 6th"
+  }, {
+    "name": {
+      "ES": "Conmemoración del Natalicio de Eugenio María de Hostos",
+      "EN": "Eugenio María de Hostos' Birthday"
+    },
+    "rule": "Second Monday of January"
+  }, {
+    "name": {
+      "ES": "Conmemoración del Natalicio de Martin Luther King, Jr.",
+      "EN": "Martin Luther King's Birthday"
+    },
+    "rule": "Third Monday of January"
+  }, {
+    "name": {
+      "ES": "Día de San Valentín",
+      "EN": "Valentine's Day"
+    },
+    "rule": "February 14th"
+  }, {
+    "name": {
+      "ES": "Día de los Presidentes",
+      "EN": "Presidents' Day"
+    },
+    "rule": "Third Monday of February"
+  }, {
+    "name": {
+      "ES": "Día de la Abolición de la Esclavitud",
+      "EN": "Emancipation Day"
+    },
+    "rule": "March 22nd"
+  }, {
+    "name": {
+      "ES": "Viernes Santo",
+      "EN": "Good Friday"
+    },
+    "rule": "April 3rd"
+  }, {
+    "name": {
+      "ES": "Domingo de la Resurrección",
+      "EN": "Easter"
+    },
+    "rule": "April 5th"
+  }, {
+    "name": {
+      "ES": "Conmemoración del Natalicio de José de Diego",
+      "EN": "José de Diego's Birthday"
+    },
+    "rule": "Third Monday of April"
+  }, {
+    "name": {
+      "ES": "Día de las Madres",
+      "EN": "Mother's Day"
+    },
+    "rule": "Second Sunday of May"
+  }, {
+    "name": {
+      "ES": "Memorial Day",
+      "EN": "Memorial Day"
+    },
+    "rule": "Last Monday of May"
+  }, {
+    "name": {
+      "ES": "Día de los Padres",
+      "EN": "Father's Day"
+    },
+    "rule": "Third Sunday of June"
+  }, {
+    "name": {
+      "ES": "Día de la Independencia de Estados Unidos",
+      "EN": "Independence Day"
+    },
+    "rule": "July 4th"
+  }, {
+    "name": {
+      "ES": "Conmemoración del Natalicio de Luis Muñoz Rivera",
+      "EN": "Luis Muñoz Rivera's Birthday"
+    },
+    "rule": "Third Monday of July"
+  }, {
+    "name": {
+      "ES": "Conmemoración del Estado Libre Asociado",
+      "EN": "Commonwealth of Puerto Rico"
+    },
+    "rule": "July 25th"
+  }, {
+    "name": {
+      "ES": "Conmemoración del Natalicio de José Celso Barbosa",
+      "EN": "José Celso Barbosa's Birthday"
+    },
+    "rule": "July 27th"
+  }, {
+    "name": {
+      "ES": "Día del Trabajo",
+      "EN": "Labor Day"
+    },
+    "rule": "First Monday of September"
+  }, {
+    "name": {
+      "ES": "Descubrimiento de América",
+      "EN": "Columbus Day"
+    },
+    "rule": "October 12th"
+  }, {
+    "name": {
+      "ES": "Halloween",
+      "EN": "Halloween"
+    },
+    "rule": "October 31st"
+  }, {
+    "name": {
+      "ES": "Día del Veterano",
+      "EN": "Veteran's Day"
+    },
+    "rule": "November 11th"
+  }, {
+    "name": {
+      "ES": "Día del Descubrimiento de Puerto Rico",
+      "EN": "Discovery of Puerto Rico"
+    },
+    "rule": "November 19th"
+  }, {
+    "name": {
+      "ES": "Día de Acción de Gracias",
+      "EN": "Thanksgiving Day"
+    },
+    "rule": "Fourth Thursday of November"
+  }, {
+    "name": {
+      "ES": "Noche Buena",
+      "EN": "Christmas Eve"
+    },
+    "rule": "December 24th"
+  }, {
+    "name": {
+      "ES": "Navidad",
+      "EN": "Christmas Day"
+    },
+    "rule": "December 25th"
+  }, {
+    "name": {
+      "ES": "Vispera de Año Nuevo",
+      "EN": "New Years Eve"
+    },
+    "rule": "December 31st"
+  }
+
+]
