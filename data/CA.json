@@ -9,7 +9,7 @@
             "EN": "Family Day",     
             "FR": "Fête de la famille"
         }, 
-        "rule": "Third Monday in February" 
+        "rule": "Third Monday of February" 
     }, { 
         "name": {
             "EN": "Good Friday",     
