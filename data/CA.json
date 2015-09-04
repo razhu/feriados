@@ -1,56 +1,29 @@
 [
-        { "name": {
-            "EN": "New Year's Day",  
-            "FR": "Jour de l'An"
-        },
+        { "name": "New Year's Day",  
         "rule": "January 1st"
     }, { 
-        "name": {
-            "EN": "Family Day",     
-            "FR": "Fête de la famille"
-        }, 
+        "name": "Family Day",     
         "rule": "Third Monday of February" 
     }, { 
-        "name": {
-            "EN": "Good Friday",     
-            "FR": "Vendredi saint"
-        }, 
+        "name": "Good Friday",     
         "rule": "%EASTER -2 days" 
     }, { 
-        "name": {
-            "EN": "Victoria Day",    
-            "FR": "Fête de la Reine"
-        }, 
+        "name": "Victoria Day",    
         "rule": "Third Monday of May" 
     }, {
-        "name": {
-            "EN": "Canada Day",
-            "FR": "Fête du Canada"
-        }, 
+        "name": "Canada Day",
         "rule": "July 1st" 
     }, { 
-        "name": {
-            "EN": "Labor Day",
-            "FR": "Fête du travail"
-        }, 
+        "name": "Labor Day",
         "rule": "First Monday of September" 
     }, { 
-        "name": {
-            "EN": "Thanksgiving",
-            "FR": "Action de grâce"
-        }, 
+        "name": "Thanksgiving",
         "rule": "Second Monday of October" 
     }, {
-        "name": {
-            "EN": "Remembrance Day",
-            "FR": "Jour du Souvenir"
-        }, 
+        "name": "Remembrance Day",
         "rule": "Second Monday of October" 
     }, {
-        "name": {
-            "EN": "Christmas",
-            "FR": "Noël"
-        }, 
+        "name": "Christmas",
         "rule": "December 25th" 
     }
 ]
