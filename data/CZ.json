@@ -4,11 +4,11 @@
 	{ "name" : "Den vítězství",                                   "rule" : "May 8th"                               },
 	{ "name" : "Den slovanských věrozvěstů Cyrila a Metoděje",    "rule" : "July 5th"                              },
 	{ "name" : "Den upálení mistra Jana Husa",                    "rule" : "July 6th"                              },
-	{ "name" : "Den české státnosti",  						      "rule" : "September 28th"                        },
+	{ "name" : "Den české státnosti",                             "rule" : "September 28th"                        },
 	{ "name" : "Den vzniku samostatného československého státu",  "rule" : "October 28th"                          },
 	{ "name" : "Den boje za svobodu a demokracii",                "rule" : "November 17th"                         },
 	{ "name" : "Štědrý den",                                      "rule" : "December 24th"                         },
 	{ "name" : "1. svátek vánoční",                               "rule" : "December 25th"                         },
 	{ "name" : "2. svátek vánoční",                               "rule" : "December 26th"                         },
-	{ "name" : "Velikonoční pondělí",                             "rule" : "%EASTER"                               }
+	{ "name" : "Velikonoční pondělí",                             "rule" : "%EASTER +1 days"                       }
 ]
