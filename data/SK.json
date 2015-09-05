@@ -1,0 +1,18 @@
+[
+    { "name" : "Deň vzniku Slovenskej republiky",                 "rule" : "January 1st"                           },
+    { "name" : "Zjavenie Pána (Traja králi)",                     "rule" : "January 6th"                           },
+    { "name" : "Sviatok práce",                                   "rule" : "May 1st"                               },
+    { "name" : "Deň víťazstva nad fašizmom",                      "rule" : "May 8th"                               },
+    { "name" : "Sviatok svätého Cyrila a Metoda",                 "rule" : "July 5th"                              },
+    { "name" : "Výročie SNP",                                     "rule" : "August 29th"                           },
+    { "name" : "Deň ústavy Slovenskej republiky",                 "rule" : "September 1st"                         },
+    { "name" : "Sedembolestná Panna Mária",                       "rule" : "September 15st"                        },
+    { "name" : "Den vzniku samostatného československého státu",  "rule" : "October 28th"                          },
+    { "name" : "Sviatok všetkých svätých",                        "rule" : "November 1th"                          },
+    { "name" : "Deň boja za slobodu a demokraciu",                "rule" : "November 17th"                         },
+    { "name" : "Štedrý deň",                                      "rule" : "December 24th"                         },
+    { "name" : "Prvý sviatok vianočný",                           "rule" : "December 25th"                         },
+    { "name" : "Druhý sviatok vianočný",                          "rule" : "December 26th"                         },
+    { "name" : "Veľký piatok",                                    "rule" : "%EASTER - 2 days"                      },
+    { "name" : "Veľkonočný pondelok",                             "rule" : "%EASTER + 1 days"                      }
+]
