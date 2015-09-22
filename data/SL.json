@@ -1,0 +1,15 @@
+[
+  {"name": "Novo leto",                       "rule": "January 1st"},
+  {"name": "Prešernov dan",                   "rule": "February 8th"},
+  {"name": "Dan upora proti okupatorju",      "rule": "April 27th"},
+  {"name": "Praznik dela",                    "rule": "May 1st"},
+  {"name": "Praznik dela",                    "rule": "May 2nd"},
+  {"name": "Dan državnosti",                  "rule": "June 25th"},
+  {"name": "Marijino vnebovzetje",            "rule": "August 15th"},
+  {"name": "Dan reformacije",                 "rule": "October 31st"},
+  {"name": "Dan spomina na mrtve",            "rule": "November 1st"},
+  {"name": "Božič",                           "rule": "December 25th"},
+  {"name": "Dan samostojnosti in enotnosti",  "rule": "December 26th"},
+  {"name": "Velikonočna nedelja",             "rule": "%EASTER"},
+  {"name": "velikonočni ponedeljek",          "rule": "%EASTER + 1 days"}
+]
