@@ -1,0 +1,15 @@
+[
+    { "name" : "Nowy Rok",                               "rule" : "January 1st" },
+    { "name" : "Święto Trzech Króli",                    "rule" : "January 6th" },
+    { "name" : "Święto Państwowe",                       "rule" : "May 1st" },
+    { "name" : "Święto Narowode Trzeciego Maja",         "rule" : "May 3rd" },
+    { "name" : "Wniebowzięcie Najświętszej Marii Panny", "rule" : "August 15th" },
+    { "name" : "Uroczystość Wszystkich Świętych",        "rule" : "November 1st" },
+    { "name" : "Narodowe Święto Niepodległości",         "rule" : "November 11th" },
+    { "name" : "Pierwszy dzień Bożego Narodzenia",       "rule" : "December 25th" },
+    { "name" : "Drugi dzień Bożego Narodzenia",          "rule" : "December 26th" },
+    { "name" : "Niedziela Wielkanocna",                  "rule" : "%EASTER" },
+    { "name" : "Poniedziałek Wielkanocny",               "rule" : "%EASTER + 1 days" },
+    { "name" : "Zesłanie Ducha Świętego",                "rule" : "%EASTER + 49 days" },
+    { "name" : "Dzień Bożego Ciała",                     "rule" : "%EASTER + 60 days" }
+]
