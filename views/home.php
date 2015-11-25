@@ -21,8 +21,8 @@
                 </div>
 
                 <div class="well">
-                    <h2>Usage</h2>
-                    <p>To retrieve a list of holidays, simply make a request to<br><a href="http://holidayapi.com/v1/holidays" target="_blank">http://holidayapi.com/v1/holidays</a></p>
+                    <h2>Usage example</h2>
+                    <p>To retrieve a list of holidays, simply make a GET request to <a href="/v1/holidays?country=ES&amp;year=2016" target="_blank">/v1/holidays</a></p>
                 </div>
 
                 <div class="well">
