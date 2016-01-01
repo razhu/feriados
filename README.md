@@ -7,7 +7,8 @@ keeping a static list in a database.
 
 ## Local Development
 
-To install *composer*:
+To install `composer`:
+
 ```shell
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 ```
@@ -18,7 +19,9 @@ To install the dependencies:
 composer install
 npm install
 ```
-To install *gulp*
+
+To install `gulp`:
+
 ```shell
 npm install -g gulp
 ```
