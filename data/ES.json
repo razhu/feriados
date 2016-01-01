@@ -1,0 +1,12 @@
+[
+	{ "name" : "Año nuevo",                                 "rule" : "January 1st"                           },
+	{ "name" : "Epifanía del Señor",                         "rule" : "January 6th"                           },
+	{ "name" : "Día del trabajador",                              "rule" : "May 1st"                               },
+	{ "name" : "Virgen de la Asunción",                                   "rule" : "August 15th"                           },
+	{ "name" : "Día de la Hispanidad",                                    "rule" : "October 12th"                          },
+	{ "name" : "Día de Todos los Santos",                            "rule" : "November 1th"                         },
+	{ "name" : "Día de la Constitución",                                         "rule" : "December 6th"                         },
+	{ "name" : "Inmaculada Concepción",                                         "rule" : "December 8th"                         },
+	{ "name" : "Navidad",                                         "rule" : "December 25th"                         },
+	{ "name" : "Viernes Santo",                         "rule" : "%EASTER -2 days"                      }
+]
