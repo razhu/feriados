@@ -1,0 +1,16 @@
+[
+	{ "name" : "Año nuevo", "rule" : "January 1st" },
+	{ "name" : "Día del trabajador", "rule" : "May 1st"},
+	{ "name" : "Virgen de la Asunción", "rule" : "August 15th" },
+	{ "name" : "Día de la Independencia","rule" : "September 15th"},
+	{ "name" : "Día de la Revolución","rule" : "October 20th"},
+	{ "name" : "Día de Todos los Santos","rule" : "November 1th" },
+	{ "name" : "Día del Ejército","rule" : "June 30th" },
+	{ "name" : "Noche Buena","rule" : "December 24th" },
+	{ "name" : "Día de Navidad","rule" : "December 25th" },
+	{ "name" : "Fiesta de fin de año","rule" : "December 31th" },
+	{ "name" : "Viernes Santo", "rule" : "%EASTER -2 days"},
+	{ "name" : "Jueves Santo", "rule" : "%EASTER -3 days"},
+	{ "name" : "Sábado Santo", "rule" : "%EASTER -1 days"},
+	{ "name" : "Domingo de Resurrección", "rule" : "%EASTER -0 days"}
+]
