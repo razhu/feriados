@@ -21,8 +21,8 @@
                 </div>
 
                 <div class="well">
-                    <h2>Usage</h2>
-                    <p>To retrieve a list of holidays, simply make a request to<br><a href="http://holidayapi.com/v1/holidays" target="_blank">http://holidayapi.com/v1/holidays</a></p>
+                    <h2>Usage example</h2>
+                    <p>To retrieve a list of holidays, simply make a GET request to <a href="/v1/holidays?country=ES&amp;year=2016" target="_blank">/v1/holidays</a></p>
                 </div>
 
                 <div class="well">
@@ -31,7 +31,7 @@
                     <h4>Required</h4>
                     <div class="row">
                         <div class="col-xs-3"><code>country</code></div>
-                        <div class="col-xs-9"><a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" target="_blank">ISO 3166-1 alpha-2</a> format (BE, BR, CA, CZ, FR, GB, NO, SK, SL or US)</div>
+                        <div class="col-xs-9"><a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" target="_blank">ISO 3166-1 alpha-2</a> format (BE, BR, CA, CZ, DE, FR, GB, GT, NO, PL, SK, SL or US)</div>
                     </div>
                     <div class="row">
                         <div class="col-xs-3"><code>year</code></div>
@@ -96,7 +96,7 @@
 
                 <div class="well">
                     <h3>Contributors</h3>
-                    <p>Holiday API was conceived and coded by <a href="http://joshtronic.com">Josh Sherman</a> and is provided as a free service. Special thanks to <a href="https://github.com/LGnap">LGnap</a>, <a href="https://github.com/WanderingZombie">John Nicholls</a>, <a href="https://github.com/GA114">Antonio Gurgel</a>, <a href="https://github.com/azzlack">Ove Andersen</a>, <a href="https://github.com/luisreyes">Luis Reyes</a>, <a href="https://github.com/MPomeroy">Mason Pomeroy</a>, <a href="https://github.com/calvera">Karel Sommer</a>, <a href="https://github.com/Sazed">Sazed</a> for contributing additional country files. Website and logo artfully designed by <a href="https://twitter.com/thegeoffoliver" target="_blank">Geoff Oliver</a> of <a href="http://www.plan8studios.com/">Plan8 Studios</a>. Holiday API is <a href="https://www.linode.com/?r=5f682793582e82ce686747c851b998dc1f86a55b" target="_blank">proudly hosted by Linode</a>.</p>
+                    <p>Holiday API was conceived and coded by <a href="http://joshtronic.com">Josh Sherman</a> and is provided as a free service. Special thanks to <a href="https://github.com/LGnap">LGnap</a>, <a href="https://github.com/WanderingZombie">John Nicholls</a>, <a href="https://github.com/GA114">Antonio Gurgel</a>, <a href="https://github.com/azzlack">Ove Andersen</a>, <a href="https://github.com/luisreyes">Luis Reyes</a>, <a href="https://github.com/MPomeroy">Mason Pomeroy</a>, <a href="https://github.com/calvera">Karel Sommer</a>, <a href="https://github.com/Sazed">Sazed</a>, <a href="https://github.com/dochardi">Kai</a> and <a href="https://github.com/kleewho">Łukasz Klich</a> for contributing additional country files. Website and logo artfully designed by <a href="https://twitter.com/thegeoffoliver" target="_blank">Geoff Oliver</a> of <a href="http://www.plan8studios.com/">Plan8 Studios</a>. Holiday API is <a href="https://www.linode.com/?r=5f682793582e82ce686747c851b998dc1f86a55b" target="_blank">proudly hosted by Linode</a>.</p>
                 </div>
                 <footer class="lead">
                     Built with <span class="heart">&hearts;</span> by <a href="http://joshtronic.com/?ref=holidayapi">@joshtronic</a>

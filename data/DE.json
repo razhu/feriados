@@ -1,0 +1,14 @@
+[
+	{ "name" : "Neujahrstag",                                 "rule" : "January 1st"                           },
+	{ "name" : "Heilige Drei Könige",                         "rule" : "January 6st"                           },
+	{ "name" : "Tag der Arbeit",                              "rule" : "May 1st"                               },
+	{ "name" : "Friedensfest",                                 "rule" : "August 8th"                           },
+	{ "name" : "Tag der Deutschen Einheit",                    "rule" : "October 3th"                           },
+	{ "name" : "Weihnachtstag",                                "rule" : "December 25th"                         },
+	{ "name" : "Zweiter Weihnachtsfeiertag",                   "rule" : "December 26th"                         },
+	{ "name" : "Karfreitag",                                  "rule" : "%EASTER -2 days"              			},
+	{ "name" : "Ostermontag",                                  "rule" : "%EASTER +1 days"              			},
+	{ "name" : "Christi Himmelfahrt",                         "rule" : "%EASTER +39 days"                      },
+	{ "name" : "Pfingstmontag",                               "rule" : "%EASTER +50 days"                      },
+	{ "name" : "Fronleichnam",                                "rule" : "%EASTER +60 days"                      }
+]
