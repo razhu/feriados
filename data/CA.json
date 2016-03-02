@@ -14,6 +14,9 @@
         "name": "Canada Day",
         "rule": "July 1st" 
     }, { 
+        "name": "Civic Holiday",
+        "rule": "First Monday of August" 
+    }, {
         "name": "Labor Day",
         "rule": "First Monday of September" 
     }, { 
@@ -25,5 +28,8 @@
     }, {
         "name": "Christmas",
         "rule": "December 25th" 
+    }, {
+        "name": "Boxing Day",
+        "rule": "December 26th" 
     }
 ]
