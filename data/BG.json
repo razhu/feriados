@@ -8,8 +8,9 @@
     { "name" : "Великден",                                              "rule" : "%EASTER + 1 days"},
     { "name" : "Международен ден на труда",                             "rule" : "May 1st" },
     { "name" : "Гергьовден, Ден на храбростта и Българската армия",     "rule" : "May 6th" },
+    { "name" : "Ден на българската просвета и култура и на славянската писменост",     "rule" : "May 24th" },
     { "name" : "Ден на независимостта на България",                     "rule" : "September 22th" },
     { "name" : "Коледа",                                                "rule" : "December 24th" },
     { "name" : "Коледа",                                                "rule" : "December 25th" },
-    { "name" : "Коледа",                                                "rule" : "December 26th" },
+    { "name" : "Коледа",                                                "rule" : "December 26th" }
 ]
