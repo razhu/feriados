@@ -1,0 +1,15 @@
+[
+{ "name" : "Nieuwjaarsdag",                     "rule" : "January 1st"                    },
+{ "name" : "Eerste Paasdag",                    "rule" : "%EASTER"                        },
+{ "name" : "Tweede Paasdag",                    "rule" : "%EASTER +1 day"                 },
+{ "name" : "Goede Vrijdag",                     "rule" : "%EASTER -2 days"                },
+{ "name" : "Koningsdag",                        "rule" : "April 27th"                     },
+{ "name" : "Dodenherdenking",                   "rule" : "May 4th"                        },
+{ "name" : "Bevrijdingsdag",                    "rule" : "May 5th"                        },
+{ "name" : "Hemelvaartsdag",                    "rule" : "%EASTER +39 days"               },
+{ "name" : "Eerste Pinksterdag",                "rule" : "%EASTER +50 days"               },
+{ "name" : "Tweede Pinksterdag",                "rule" : "%EASTER +52 days"               },
+{ "name" : "Sinterklaas",                       "rule" : "December 5th"                   },
+{ "name" : "Eerste Kerstdag",                   "rule" : "December 25th"                  },
+{ "name" : "Tweede Kerstdag",                   "rule" : "December 26th"                  }
+]
