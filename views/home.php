@@ -22,7 +22,7 @@
 
                 <div class="well">
                     <h2>Usage example</h2>
-                    <p>To retrieve a list of holidays, simply make a GET request to <a href="/v1/holidays?country=ES&amp;year=2016" target="_blank">/v1/holidays</a></p>
+                    <p>To retrieve a list of holidays, simply make a GET request to <a href="/v1/holidays?country=US&year=<?= date('Y'); ?>&month=<?= date('m'); ?>" target="_blank">/v1/holidays</a></p>
                 </div>
 
                 <div class="well">
