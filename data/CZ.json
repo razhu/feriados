@@ -10,5 +10,6 @@
 	{ "name" : "Štědrý den",                                      "rule" : "December 24th"                         },
 	{ "name" : "1. svátek vánoční",                               "rule" : "December 25th"                         },
 	{ "name" : "2. svátek vánoční",                               "rule" : "December 26th"                         },
+	{ "name" : "Velký pátek",                                     "rule" : "%EASTER -2 days"                       },
 	{ "name" : "Velikonoční pondělí",                             "rule" : "%EASTER +1 days"                       }
 ]
