@@ -148,15 +148,18 @@ class v1
 
                     if ($rule) {
                         $calculated_date = date('Y-m-d', strtotime($rule));
+                        $day = date('l', strtotime($calculated_date));
+                        if($day == "Sunday"){
+                            $calculated_date = date('Y-m-d', strtotime($calculated_date . ' +1 day'));
+                        }
 
                         if (!isset($calculated_holidays[$calculated_date])) {
                             $calculated_holidays[$calculated_date] = [];
                         }
 
                         $calculated_holidays[$calculated_date][] = [
-                            'name'    => $country_holiday['name'],
-                            'country' => $country,
-                            'date'    => $calculated_date,
+                            'nombre'    => $country_holiday['name'],
+                            'fecha'    => $calculated_date
                         ];
                     }
                 }

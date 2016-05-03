@@ -1,7 +1,7 @@
 {
-  "name": "holidayapi.com",
+  "name": "agetic.gob.bo",
   "version": "0.0.0",
-  "description": "holidayapi.com ==============",
+  "description": "Feriados de Bolivia",
   "main": "index.js",
   "directories": {
     "test": "tests"

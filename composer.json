@@ -1,11 +1,11 @@
 {
-  "name": "joshtronic/holidayapi.com",
+  "name": "https://agetic.gob.bo",
   "license": "MIT",
   "authors": [
     {
-      "name": "Josh Sherman",
-      "email": "josh@gravityblvd.com",
-      "homepage": "http://joshtronic.com"
+      "name": "Ramiro Huayller",
+      "email": "rhuayller@agetic.gob.bo",
+      "homepage": "https://agetic.gob.bo"
     }
   ],
   "require": {

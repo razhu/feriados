@@ -1,32 +1,29 @@
-# Holiday API
+# Feriados API
 
-Holiday API is website (and soon to be stand-alone PHP class) for obtaining
-information about holidays. The project was started as a personal challenge to
-see if I could generate holiday lists on the fly for any date instead of
-keeping a static list in a database.
+Esta API obtiene fechas de feriados de Bolivia. Si el feriado es un domingo, la fecha mostrada es la del dia siguiente (esto segun el D.S. XXXX)
 
-## Local Development
+## Desarrollo Local
 
-To install `composer`:
+Para instarlar `composer`:
 
 ```shell
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 ```
 
-To install the dependencies:
+Instalar dependencias:
 
 ```shell
 composer install
 npm install
 ```
 
-To install `gulp`:
+Instalar Gulp `gulp`:
 
 ```shell
 npm install -g gulp
 ```
 
-To run the server:
+Ejecutar el server:
 
 ```shell
 gulp server
