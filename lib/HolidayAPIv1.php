@@ -148,8 +148,8 @@ class v1
 
                     if ($rule) {
                         $calculated_date = date('Y-m-d', strtotime($rule));
-                        $day = date('l', strtotime($calculated_date));
-                        if($day == "Sunday"){
+                        $day_name = date('l', strtotime($calculated_date));
+                        if($day_name == "Sunday"){
                             $calculated_date = date('Y-m-d', strtotime($calculated_date . ' +1 day'));
                         }
 
@@ -158,8 +158,9 @@ class v1
                         }
 
                         $calculated_holidays[$calculated_date][] = [
+                            'fecha'    => $calculated_date,
                             'nombre'    => $country_holiday['name'],
-                            'fecha'    => $calculated_date
+                            'dia'    => $day_name
                         ];
                     }
                 }

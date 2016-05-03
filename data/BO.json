@@ -1,13 +1,62 @@
 [
-	{ "name" : "Año Nuevo",                           "rule" : "January 1st"                           },
-	{ "name" : "Dia del Estado Plurinacional",          "rule" : "January 22nd"                           },
-	{ "name" : "Día del Trabajo",                                  "rule" : "May 1st"                               },
-	{ "name" : "Corpus Christi",                            "rule" : "May 26th"                               },
-    { "name" : "Día de la Madre",                            "rule" : "May 27th"                               },
-	{ "name" : "Año Nuevo Aymara",                                 "rule" : "June 21st"                             },
-	{ "name" : "Día de La Paz",                         "rule" : "July 16th"                              },
-	{ "name" : "Dia de Bolivia",                           "rule" : "August 6th"                            },
-	{ "name" : "Día de los muertos",                             "rule" : "November 2nd"                         },
-	{ "name" : "Navidad",                                "rule" : "December 25th"                         },
-	{ "name" : "Noche de Año Nuevo",                           "rule" : "December 31st"                         }
+    {
+        "name": "Año Nuevo",
+        "rule": "January 1st"
+    },
+    {
+        "name": "Dia del Estado Plurinacional",
+        "rule": "January 22nd"
+    },
+    {
+        "name": "Día del Trabajo",
+        "rule": "May 1st"
+    },
+    {
+        "name": "Corpus Christi",
+        "rule": "May 26th"
+    },
+    {
+        "name": "Año Nuevo Aymara",
+        "rule": "June 21st"
+    },
+    {
+        "name": "Día de La Paz",
+        "rule": "July 16th"
+    },
+    {
+        "name": "Aniversario de Bolivia",
+        "rule": "August 6th"
+    },
+    {
+        "name": "Día de los muertos",
+        "rule": "November 2nd"
+    },
+    {
+        "name": "Navidad",
+        "rule": "December 25th"
+    },
+    {
+        "name": "Pascuas",
+        "rule": "%EASTER"
+    },
+    {
+        "name": "Miercoles de cenizas",
+        "rule": "%EASTER -46 days"
+    },
+    {
+        "name": "Domingo de Ramos",
+        "rule": "%EASTER -7 days"
+    },
+    {
+        "name": "Viernes Santo",
+        "rule": "%EASTER -2 days"
+    },
+    {
+        "name": "Lunes de Carnaval",
+        "rule": "%EASTER -48 days"
+    },
+    {
+        "name": "Martes de Carnaval",
+        "rule": "%EASTER -47 days"
+    }
 ]
