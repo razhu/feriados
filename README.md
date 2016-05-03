@@ -1,8 +1,8 @@
 # Feriados API
 
-Esta API obtiene fechas de feriados de Bolivia. Si el feriado es un domingo, la fecha mostrada es la del dia siguiente (esto segun el D.S. XXXX)
+Esta API obtiene fechas de feriados de Bolivia. Si el feriado es un domingo, la fecha mostrada es la del dia siguiente (esto según el D.S. XXXX)
 
-## Desarrollo Local
+# Instalación aplicación
 
 Para instarlar `composer`:
 
@@ -28,3 +28,4 @@ Ejecutar el server:
 ```shell
 gulp server
 ```
+# Instalación aplicación

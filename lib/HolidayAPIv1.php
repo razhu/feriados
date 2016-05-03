@@ -148,8 +148,11 @@ class v1
 
                     if ($rule) {
                         $calculated_date = date('Y-m-d', strtotime($rule));
+                        //se obtiene el nombre literal del dia
                         $day_name = date('l', strtotime($calculated_date));
+                        //compar si tal dia es domingo
                         if($day_name == "Sunday"){
+                            //si es domingo se recorre un dia en el calendario, que viene a ser lunes.
                             $calculated_date = date('Y-m-d', strtotime($calculated_date . ' +1 day'));
                         }
 
@@ -159,8 +162,7 @@ class v1
 
                         $calculated_holidays[$calculated_date][] = [
                             'fecha'    => $calculated_date,
-                            'nombre'    => $country_holiday['name'],
-                            'dia'    => $day_name
+                            'nombre'    => $country_holiday['name']
                         ];
                     }
                 }
