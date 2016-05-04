@@ -4,7 +4,7 @@ Esta API obtiene fechas de feriados de Bolivia. Si el feriado es un domingo, la 
 
 # Instalación aplicación
 
-Para instarlar `composer`:
+Instarlar `composer`:
 
 ```shell
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
