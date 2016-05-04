@@ -28,4 +28,5 @@ Ejecutar el server:
 ```shell
 gulp server
 ```
-# Instalación aplicación
+# Uso de la aplicación
+Ver documentacion en docs/API.md

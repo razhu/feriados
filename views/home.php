@@ -17,14 +17,34 @@
                     <img class="logo" src="/img/logo.png" style="width:250px; height:250px;">
                 </header>
                 <div class="well lead">
-                    Esta API retorna las fechas de los feriados de Bolivia.
+
+                    Esta API retorna las fechas de los feriados de Bolivia. Tomando en cuenta que si un feriado es domingo, recorre un día
+
+
                 </div>
-                <p>
+                <div>
+                                                        <p>
                     Ejemplo para el mes de Agosto (08)
                     </p>
+                        <p>
+                        <a href="http://192.168.20.219:3000/v1/feriados?pais=BO&ano=2016&mes=05" target="_blank">http://192.168.20.219:3000/v1/feriados?pais=BO&ano=2016&mes=05</a>
+                        </p>
                         <pre>
-                        /v1/holidays?country=BO&year=2016&month=08
-                        </pre>
+{
+  "status": 200,
+  "feriados": [
+    {
+      "fecha": "2016-05-02",
+      "nombre": "Día del Trabajo"
+    },
+    {
+      "fecha": "2016-05-26",
+      "nombre": "Corpus Christi"
+    }
+  ]
+}
+                         </pre>   
+                    </div>
 
 
                 <footer class="lead">
