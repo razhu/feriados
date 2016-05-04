@@ -6,7 +6,7 @@ switch ($request_uri[0]) {
         require '../views/home.php';
         break;
 
-    case '/v1/holidays':
+    case '/v1/feriados':
         require '../views/api.php';
         break;
 
